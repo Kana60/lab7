@@ -32,3 +32,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(textView);
     }
 }
+
+Button button = findViewById(R.id.button);
+button.setOnClickListener(v -> {
+TextView textView = findViewById(R.id.textView);
+    textView.setText("Button Clicked");
+});
+
