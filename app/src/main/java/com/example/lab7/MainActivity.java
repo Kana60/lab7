@@ -39,3 +39,10 @@ TextView textView = findViewById(R.id.textView);
     textView.setText("Button Clicked");
 });
 
+
+Button button = findViewById(R.id.button);
+button.setOnClickListener(v -> {
+Intent intent = new Intent(MainActivity.this, NewActivity.class);
+startActivity(intent);
+});
+
